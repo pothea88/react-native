@@ -5,6 +5,7 @@ import NativeBase from './test/nativeBase/NativeBase';
 import NativeElement from './test/NativeElement/NativeElement';
 import UIKitten from './test/UIKitten/UIKitten';
 import MaterialUI from './test/MaterialUI/MaterialUI';
+import Nativation from './test/Navigation/Navigation';
 
 export default () => {
   return (
@@ -15,6 +16,7 @@ export default () => {
       {/* <NativeElement /> */}
       {/* <UIKitten /> */}
       {/* <MaterialUI /> */}
+      {/* <Nativation /> */}
     </React.Fragment>
   );
 };

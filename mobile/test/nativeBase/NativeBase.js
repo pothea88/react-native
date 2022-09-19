@@ -9,8 +9,10 @@ import {
   Image,
   Text,
   useDisclose,
+  CheckCircleIcon,
+  ChevronDownIcon,
 } from 'native-base';
-
+import Ionicons from '@expo/vector-icons/Ionicons';
 const NativeBase = () => {
   const colors = {
     primary: {
@@ -48,7 +50,7 @@ const NativeBase = () => {
                 </Text>
               </VStack>
               <Pressable
-                _hover={{bg: 'pink.100'}}
+                _hover={{bg: '#000'}}
                 rounded="xs"
                 bg="primary.400"
                 alignSelf="flex-start"
@@ -74,16 +76,19 @@ const NativeBase = () => {
             />
           </HStack>
         </Box>
+        <CheckCircleIcon size="5" mt="0.5" color="emerald.500" />
+        <ChevronDownIcon />
         <Box bg="primary.100" p="10" mt="4" py="2" px="2">
           <Text color="secondary.500">Testing</Text>
         </Box>
         <Box bg={colors.primary[100]} mt="10" p="5">
           <Text color="secondary.500">Test</Text>
         </Box>
+        <Ionicons name="md-checkmark-circle" size={32} color="green" />
         <Box my="4" flex={1}>
           <Pressable
             _hover={{
-              bg: 'red.500',
+              bgColor: 'primary.900',
             }}
             _focus={{
               bg: 'primary.700',
@@ -100,6 +105,7 @@ const NativeBase = () => {
             </Text>
           </Pressable>
         </Box>
+        
       </Center>
     </NativeBaseProvider>
   );

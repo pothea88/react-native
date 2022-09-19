@@ -13,9 +13,8 @@ const UIKitten = () => {
   const FacebookIcon = props => <Icon name="facebook" {...props} />;
   return (
     <>
-      
       <ApplicationProvider {...eva} theme={eva.light}>
-      <IconRegistry icons={EvaIconsPack} />
+        <IconRegistry icons={EvaIconsPack} />
         <Layout
           style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
           <Button>HOME</Button>
