@@ -11,8 +11,17 @@ import {
   useDisclose,
   CheckCircleIcon,
   ChevronDownIcon,
+  Checkbox,
+  Icon,
 } from 'native-base';
-import Ionicons from '@expo/vector-icons/Ionicons';
+// import {
+//   MaterialCommunityIcons,
+//   AntDesign,
+//   Entypo,
+// } from 'react-native-vector-icons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import iconFont from 'react-native-vector-icons/Fonts/FontAwesome.ttf';
+// import Ionicons from '@expo/vector-icons/Ionicons';
 const NativeBase = () => {
   const colors = {
     primary: {
@@ -84,7 +93,17 @@ const NativeBase = () => {
         <Box bg={colors.primary[100]} mt="10" p="5">
           <Text color="secondary.500">Test</Text>
         </Box>
-        <Ionicons name="md-checkmark-circle" size={32} color="green" />
+        <HStack>
+          <Icon
+            as={AntDesign}
+            name="android1"
+            color="coolGray.800"
+            _dark={{
+              color: 'warmGray.50',
+            }}
+          />
+        </HStack>
+        {/* <Ionicons name="md-checkmark-circle" size={32} color="green" /> */}
         <Box my="4" flex={1}>
           <Pressable
             _hover={{
@@ -104,8 +123,13 @@ const NativeBase = () => {
               Hover
             </Text>
           </Pressable>
+          <Checkbox
+            mt={3}
+            value="test"
+            accessibilityLabel="This is a dummy checkbox"
+            defaultIsChecked
+          />
         </Box>
-        
       </Center>
     </NativeBaseProvider>
   );

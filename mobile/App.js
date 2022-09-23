@@ -6,17 +6,13 @@ import NativeElement from './test/NativeElement/NativeElement';
 import UIKitten from './test/UIKitten/UIKitten';
 import MaterialUI from './test/MaterialUI/MaterialUI';
 import Nativation from './test/Navigation/Navigation';
+import {NavigationContainer} from '@react-navigation/native';
+import Routes from './test/routes/routes';
 
 export default () => {
   return (
-    <React.Fragment>
-      {/* <GetData /> */}
-      {/* <Register /> */}
-      <NativeBase />
-      {/* <NativeElement /> */}
-      {/* <UIKitten /> */}
-      {/* <MaterialUI /> */}
-      {/* <Nativation /> */}
-    </React.Fragment>
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
   );
 };
