@@ -8,11 +8,13 @@ import MaterialUI from './test/MaterialUI/MaterialUI';
 import Nativation from './test/Navigation/Navigation';
 import {NavigationContainer} from '@react-navigation/native';
 import Routes from './test/routes/routes';
+import 'react-native-gesture-handler';
 
 export default () => {
   return (
     <NavigationContainer>
       <Routes />
+      {/* <Nativation /> */}
     </NavigationContainer>
   );
 };
